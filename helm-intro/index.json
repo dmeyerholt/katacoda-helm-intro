@@ -1,6 +1,7 @@
 {
   "title": "Introduction to Helm",
-  "description": "Step by Step",
+  "description": "Step by Step oh baby",
+  "time": "20 minutes",
   "details": {
     "steps": [
       {
@@ -14,17 +15,30 @@
       {
         "title": "Step 3",
         "text": "step3.md"
+      },
+      {
+        "title": "Step 4",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5",
+        "text": "step5.md"
+      },
+      {
+        "title": "Step 6",
+        "text": "step6.md"
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "code": "startkube.sh"
     },
     "finish": {
       "text": "finish.md"
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "kubernetes"

@@ -1,0 +1,4 @@
+Example release generating a config map. 
+get its contents with kubectl get configmap {{ include "valuetests.fullname" . }}.
+
+It will contain  {{ .Values.favorite.drink }} as drink and {{ .Values.favorite.food }} as food

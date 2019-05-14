@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "valuetests.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "valuetests.name" . }}
+    helm.sh/chart: {{ include "valuetests.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+data:
+    staticvalue: "Foo"
+    drink: {{ .Values.favorite.drink }}
+    food: {{ .Values.favorite.food }}
